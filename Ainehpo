@@ -33,9 +33,9 @@ local function createHighlight(target)
     if target and target.Character then
         local highlight = Instance.new("Highlight")
         highlight.Adornee = target.Character
-        highlight.FillColor = Color3.fromRGB(255, 0, 0)
+        highlight.FillColor = Color3.fromRGB(0, 0, 0)
         highlight.OutlineColor = Color3.fromRGB(0, 0, 0)
-        highlight.FillTransparency = 0.5
+        highlight.FillTransparency = 0
         highlight.OutlineTransparency = 0
         highlight.Parent = target.Character
         return highlight
@@ -93,7 +93,7 @@ TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.1, 0, 0.1, 0)
 TextButton.Size = UDim2.new(0.8, 0, 0.8, 0) 
 TextButton.Font = Enum.Font.Arcade
-TextButton.Text = "Hawk tuah"
+TextButton.Text = "Presets"
 TextButton.TextColor3 = Color3.fromRGB(255, 0, 0) 
 TextButton.TextScaled = true
 TextButton.TextSize = 11.000
@@ -110,7 +110,7 @@ TextButton.MouseButton1Click:Connect(function()
             StarterGui:SetCore("SendNotification", {
                 Title = "Selected",
                 Text = "Camlocked: " .. enemy.DisplayName,
-                Duration = 3
+                Duration = 1
             })
         end
     else
