@@ -108,8 +108,8 @@ TextButton.MouseButton1Click:Connect(function()
         if enemy then
             highlightInstance = createHighlight(enemy)
             StarterGui:SetCore("SendNotification", {
-                Title = "Preset âœ…",
-                Text = "ðŸŽ¯: " .. enemy.DisplayName,
+                Title = "Loaded",
+                Text = "Aimbot: " .. enemy.DisplayName,
                 Duration = 3
             })
         end
