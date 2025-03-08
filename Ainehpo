@@ -93,7 +93,7 @@ TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.1, 0, 0.1, 0)
 TextButton.Size = UDim2.new(0.8, 0, 0.8, 0) 
 TextButton.Font = Enum.Font.Arcade
-TextButton.Text = "Aimbot"
+TextButton.Text = "Hawk tuah"
 TextButton.TextColor3 = Color3.fromRGB(255, 0, 0) 
 TextButton.TextScaled = true
 TextButton.TextSize = 11.000
@@ -108,8 +108,8 @@ TextButton.MouseButton1Click:Connect(function()
         if enemy then
             highlightInstance = createHighlight(enemy)
             StarterGui:SetCore("SendNotification", {
-                Title = "Loaded",
-                Text = "Aimbot: " .. enemy.DisplayName,
+                Title = "Selected",
+                Text = "Camlocked: " .. enemy.DisplayName,
                 Duration = 3
             })
         end
@@ -135,7 +135,7 @@ local rainbowColors = {
 }
 
 local rainbowIndex = 1
-local rainbowCycleSpeed = 0.09
+local rainbowCycleSpeed = 2
 
 RunService.RenderStepped:Connect(function(deltaTime)
     local index = math.floor(tick() / rainbowCycleSpeed) % #rainbowColors + 1
@@ -143,7 +143,7 @@ RunService.RenderStepped:Connect(function(deltaTime)
 end)
 
 StarterGui:SetCore("SendNotification", {
-    Title = "Hax.lol loadedðŸ¤‘",
-    Text = "made by veervegoat on dcðŸ",
-    Duration = 5
+    Title = "Script Loaded",
+    Text = "made by Andreiii",
+    Duration = 3
 })
