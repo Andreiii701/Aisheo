@@ -135,7 +135,7 @@ local rainbowColors = {
 }
 
 local rainbowIndex = 1
-local rainbowCycleSpeed = 2
+local rainbowCycleSpeed = 1
 
 RunService.RenderStepped:Connect(function(deltaTime)
     local index = math.floor(tick() / rainbowCycleSpeed) % #rainbowColors + 1
